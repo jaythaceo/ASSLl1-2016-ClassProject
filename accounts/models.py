@@ -8,7 +8,7 @@ def user_directory_path(instance, filename):
 # Create your models here.
 class UserAccounts(models.Model):
 	email = models.CharField(max_length=100)
-	password = models.CharField(max_length=15)
+	password = models.CharField(max_length=255)
 	first_name = models.CharField(max_length=255, null=True, blank=True)
 	last_name = models.CharField(max_length=255, null=True, blank=True)
 	image = models.ImageField(upload_to=user_directory_path, null=True, blank=True)
