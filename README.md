@@ -10,4 +10,6 @@ This is my project called Ibhuku.
 	Framework : Django 1.9.1
 
 	Pillow
+	
+	Memcached and Python-Memcached
 
