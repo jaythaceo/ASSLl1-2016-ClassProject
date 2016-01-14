@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{%block content%}
+<h1>Finish Your Profile</h1>
+<form action="" method="POST">
+	{% csrf_token %}
+	{{ form.as_p |linebreaks}}
+	<input  type="submit" value="Register">
+</form>
+
+{%endblock%}
